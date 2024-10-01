@@ -47,7 +47,7 @@ const projects = [
 
 export default function ProjectListings() {
     return (
-        <section className="py-12 px-12 bg-gray-50 rounded-lg m-4 shadow-lg">
+        <section className="py-6 sm:py-12 px-4 sm:px-12 bg-gray-50 rounded-lg m-4 shadow-lg">
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold mb-8 text-center text-green-500">Available Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

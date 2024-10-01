@@ -15,16 +15,19 @@ export default function ProjectGallery() {
     const [currentImage, setCurrentImage] = useState(images[0]);
 
     return (
-        <section className="bg-gray-50 rounded-lg m-4 p-6 shadow-lg">
+        <section className="bg-gray-50 rounded-lg m-3 sm:m-4 p-3 sm:p-6 shadow-lg">
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold text-center text-green-600 mb-4">Project Gallery</h2>
                 <motion.img 
                     src={currentImage} 
                     alt="Project view" 
-                    className="w-full h-96 object-cover rounded-lg mb-4 shadow-md transition-transform duration-300"
+                    className="w-full h-80 sm:h-96 object-cover rounded-lg mb-4 shadow-md transition-transform duration-300"
                     whileHover={{ scale: 1.02 }} // Slight zoom effect on hover
                 />
-                <div className="flex justify-center space-x-4">
+                <div className="flex lg:justify-center gap-4 overflow-x-auto"
+                
+                style={{ scrollbarWidth: 'none', 'msOverflowStyle': 'none' }} // Firefox and Internet Explorer
+                >
                     {images.map((image, index) => (
                         <motion.img
                             key={index}

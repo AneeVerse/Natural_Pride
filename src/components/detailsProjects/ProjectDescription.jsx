@@ -1,6 +1,6 @@
 export default function ProjectDescription() {
   return (
-    <section className="py-8 px-12 bg-white rounded-lg m-4 shadow-lg">
+    <section className="py-8 px-4 sm:px-12 bg-white rounded-lg m-3 sm:m-4 shadow-lg">
       <h2 className="text-3xl font-bold text-green-600 mb-6 text-center">Project Description</h2>
       <p className="text-gray-700 leading-relaxed mb-4">
         This land/property is located in the prime area of City A, offering an ideal opportunity

@@ -1,8 +1,8 @@
 export default function ProjectPriceArea() {
   return (
-    <section className="py-8 px-12 bg-white rounded-lg m-4 shadow-lg">
+    <section className="py-8 px-4 sm:px-12 bg-white rounded-lg m-4 shadow-lg">
       <h2 className="text-3xl font-bold text-green-600 mb-6 text-center">Price & Area Details</h2>
-      <div className="flex justify-between items-center bg-gray-50 p-6 rounded-lg shadow-md">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 bg-gray-50 p-6 rounded-lg shadow-md">
         <div>
           <h3 className="text-xl font-semibold text-green-700">Price:</h3>
           <p className="text-2xl font-bold text-gray-800">$500,000</p>

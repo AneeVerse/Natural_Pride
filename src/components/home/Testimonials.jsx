@@ -24,9 +24,9 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 px-12 bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-xl m-6">
+    <section className="py-6 sm:py-12 px-4 sm:px-12 bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-xl m-3 sm:m-6">
       <div className="container mx-auto">
-        <h2 className="text-center text-4xl font-extrabold text-green-800 tracking-wide mb-12">
+        <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-green-800 tracking-wide mb-12">
           What Our Clients Say
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">

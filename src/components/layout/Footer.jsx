@@ -5,8 +5,8 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12 px-12 rounded-lg m-4">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+    <footer className="bg-gray-900 text-white py-12 px-3 sm:px-12 rounded-lg m-4">
+      <div className="container mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-8 place-content-center  text-center md:text-left">
         
         {/* Company Info */}
         <div>
@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className=' place-self-center'>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
 
         {/* Additional Quick Links */}
-        <div>
+        {/* <div>
           <h3 className="text-xl font-semibold mb-4">Resources</h3>
           <ul className="space-y-2">
             <li>
@@ -52,7 +52,7 @@ export default function Footer() {
               <Link href="/privacy" className="hover:text-green-400 transition">Privacy Policy</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Follow Us */}
         <div>
@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-8 border-t border-gray-700 flex justify-between items-center pt-4 text-sm text-center">
+      <div className="mt-8 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center pt-4 text-sm text-center">
         <p>© 2024 Nature Pride Realty. All Rights Reserved.</p>
         <Link href="https://aneeverse.com/en/" className="text-gray-400 hover:text-green-400 mt-2 flex items-center gap-2"> 
           <span>Managed & Designed By Aneeverse</span> 

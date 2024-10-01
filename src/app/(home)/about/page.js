@@ -3,7 +3,7 @@ import { FaCheckCircle, FaQuoteLeft, FaUserCircle } from 'react-icons/fa';
 export default function About() {
   return (
     <div className="bg-gray-50 min-h-screen">
-      <div className="container mx-auto py-12 px-12">
+      <div className="container mx-auto py-6 sm:py-12 px-3 sm:px-12">
         {/* Company Information */}
         <section className="bg-white rounded-lg shadow-lg p-8 mb-8 border-l-4 border-green-500">
           <h1 className="text-4xl font-bold mb-6 text-gray-800">About Our Company</h1>

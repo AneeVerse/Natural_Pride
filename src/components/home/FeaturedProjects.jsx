@@ -10,9 +10,9 @@ const projects = [
 
 export default function FeaturedProjects() {
   return (
-    <section className="py-16 px-12 bg-gradient-to-tr from-white to-green-50 rounded-xl shadow-xl m-6">
+    <section className="py-6 sm:py-12 px-4 sm:px-12 bg-gradient-to-tr from-white to-green-50 rounded-xl shadow-xl m-3 sm:m-6">
       <div className="container mx-auto">
-        <h2 className="text-center text-5xl font-extrabold text-green-800 tracking-wide mb-16">
+        <h2 className="text-center text-3xl sm:text-5xl font-extrabold text-green-800 tracking-wide mb-16">
           Discover Our Featured Projects
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">

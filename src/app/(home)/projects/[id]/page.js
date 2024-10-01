@@ -1,3 +1,4 @@
+import InquiryFormPopup from '@/components/detailsProjects/InquiryFormPopup ';
 import ProjectDescription from '@/components/detailsProjects/ProjectDescription';
 import ProjectEnquireForm from '@/components/detailsProjects/ProjectEnquireForm';
 import ProjectGallery from '@/components/detailsProjects/ProjectGallery';
@@ -19,7 +20,7 @@ const page = () => {
          <ProjectKeyFeatures/>
          <ProjectPriceArea/>
          <ProjectEnquireForm/>
-    
+         <InquiryFormPopup/>
     </div>
   )
 }

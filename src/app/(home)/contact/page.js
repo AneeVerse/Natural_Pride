@@ -1,5 +1,4 @@
-"use client"
-// pages/contact.js
+"use client";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { useState } from 'react';
 
@@ -10,24 +9,53 @@ export default function Contact() {
     phone: '',
     message: '',
   });
+  const [loading, setLoading] = useState(false);
+  const [successMsg, setSuccessMsg] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert('Message Submitted!');
-    // Logic to send form data to backend (if required)
+    setLoading(true);
+    setSuccessMsg(""); // Reset success message
+    setErrorMsg("");   // Reset error message
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSuccessMsg('Message Submitted Successfully!');
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      } else {
+        setErrorMsg('Error submitting the form');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setErrorMsg('Something went wrong.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <div className="container mx-auto py-12 px-4">
+      <div className="container mx-auto py-6 sm:py-12 px-3 sm:px-12">
         <h1 className="text-4xl font-bold mb-8 text-center text-[#657b0e]">Contact Us</h1>
 
         {/* Contact Section */}
-        <section className="bg-white rounded-lg shadow-md p-8 mb-12">
+        <section className="bg-white rounded-lg shadow-md p-2 sm:p-8 mb-12">
           <div className="flex flex-col md:flex-row md:space-x-8">
             {/* Form Section */}
-            <div className="flex-1 bg-white rounded-lg shadow-lg p-8 mb-6 md:mb-0">
+            <div className="flex-1 bg-white rounded-lg shadow-lg px-3 py-8 sm:px-8 mb-6 md:mb-0">
               <h2 className="text-3xl font-bold mb-6 text-[#657b0e]">Get in Touch</h2>
+              {/* Display messages here */}
+              {successMsg && <div className="mb-4 text-green-600">{successMsg}</div>}
+              {errorMsg && <div className="mb-4 text-red-600">{errorMsg}</div>}
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-lg font-semibold">Name</label>
@@ -73,46 +101,49 @@ export default function Contact() {
                     required
                   />
                 </div>
-                <button type="submit" className="bg-[#8fae15] w-full text-white px-6 py-3 rounded-lg hover:bg-[#657b0e] transition-all">
-                  Submit
+                <button
+                  type="submit"
+                  className="bg-[#8fae15] w-full text-white px-6 py-3 rounded-lg hover:bg-[#657b0e] transition-all flex items-center justify-center"
+                >
+                  {loading ? <span className="loader"></span> : 'Submit'}
                 </button>
               </form>
             </div>
 
             {/* Contact Information Section */}
-            <div className="flex-1 rounded-lg shadow-lg bg-[#8fae15] text-white" style={{ backgroundImage: "url(/images/projects/project1.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
-            <div className='bg-black h-full p-8 opacity-50'>
-              <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
-              <div className="flex flex-col space-y-6">
-                <div className="flex items-center space-x-4">
-                  <FaMapMarkerAlt className="text-3xl" />
-                  <div>
-                    <p className="text-lg font-semibold">Address</p>
-                    <p>123 Real Estate Avenue, City, Country</p>
+            <div className="flex-1 rounded-lg shadow-lg bg-[#8fae15] text-white" style={{ backgroundImage: "url(/images/projects/project1.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+              <div className='bg-black rounded-lg h-full p-8 opacity-50'>
+                <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
+                <div className="flex flex-col space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <FaMapMarkerAlt className="text-3xl" />
+                    <div>
+                      <p className="text-lg font-semibold">Address</p>
+                      <p>123 Real Estate Avenue, City, Country</p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <FaPhoneAlt className="text-3xl" />
-                  <div>
-                    <p className="text-lg font-semibold">Phone</p>
-                    <p>+123 456 7890</p>
+                  <div className="flex items-center space-x-4">
+                    <FaPhoneAlt className="text-3xl" />
+                    <div>
+                      <p className="text-lg font-semibold">Phone</p>
+                      <p>+123 456 7890</p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <FaEnvelope className="text-3xl" />
-                  <div>
-                    <p className="text-lg font-semibold">Email</p>
-                    <p>info@realestate.com</p>
+                  <div className="flex items-center space-x-4">
+                    <FaEnvelope className="text-3xl" />
+                    <div>
+                      <p className="text-lg font-semibold">Email</p>
+                      <p>info@realestate.com</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          </div>
         </section>
 
         {/* Google Map Integration */}
-        <section className="bg-white rounded-lg shadow-md p-8 mb-12">
+        <section className="bg-white rounded-lg shadow-md p-4 sm:p-8 mb-12">
           <h2 className="text-3xl font-bold mb-6 text-[#657b0e]">Our Location</h2>
           <div className="w-full h-72 rounded-lg overflow-hidden">
             <iframe
