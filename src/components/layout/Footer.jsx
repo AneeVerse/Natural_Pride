@@ -1,18 +1,18 @@
-// components/Footer.js
+"use client";
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-12 px-12 rounded-lg m-4">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4  gap-8 text-center md:text-left">
+    <footer className="bg-gray-900 text-white py-12 px-12 rounded-lg m-4">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
         
         {/* Company Info */}
         <div>
-          <h3 className="text-2xl font-bold mb-4">Land & Property</h3>
+          <h3 className="text-2xl font-bold mb-4 text-green-500">Nature Pride Realty</h3>
           <p className="text-sm">
-            We are committed to providing the best real estate services with a focus on customer satisfaction. Contact us to find your dream property today.
+            We are dedicated to offering the best real estate services with a focus on customer satisfaction. Explore our listings to find your dream property today.
           </p>
         </div>
 
@@ -21,35 +21,35 @@ export default function Footer() {
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="#" className="hover:text-blue-400 transition">Home</Link>
+              <Link href="/" className="hover:text-green-400 transition">Home</Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-400 transition">About Us</Link>
+              <Link href="/about" className="hover:text-green-400 transition">About Us</Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-400 transition">Projects</Link>
+              <Link href="/projects" className="hover:text-green-400 transition">Projects</Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-400 transition">Contact Us</Link>
+              <Link href="/contact" className="hover:text-green-400 transition">Contact Us</Link>
             </li>
           </ul>
         </div>
 
-        {/* Quick Links */}
+        {/* Additional Quick Links */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+          <h3 className="text-xl font-semibold mb-4">Resources</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="#" className="hover:text-blue-400 transition">Home</Link>
+              <Link href="/blog" className="hover:text-green-400 transition">Blog</Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-400 transition">About Us</Link>
+              <Link href="/faq" className="hover:text-green-400 transition">FAQ</Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-400 transition">Projects</Link>
+              <Link href="/terms" className="hover:text-green-400 transition">Terms of Service</Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-400 transition">Contact Us</Link>
+              <Link href="/privacy" className="hover:text-green-400 transition">Privacy Policy</Link>
             </li>
           </ul>
         </div>
@@ -75,10 +75,11 @@ export default function Footer() {
       </div>
 
       <div className="mt-8 border-t border-gray-700 flex justify-between items-center pt-4 text-sm text-center">
-        <p>© 2024 Natural Pride. All Rights Reserved.</p>
-        <Link href={"https://aneeverse.com/en/"} className="text-gray-400 mt-2 flex items-center gap-2"> <span>Managed & Designed By Aneeverse </span> 
-        <Image src={"/logo/aneeverse-logo.png"} alt='aneeverse logo' width={20} height={20}/>
-       </Link>
+        <p>© 2024 Nature Pride Realty. All Rights Reserved.</p>
+        <Link href="https://aneeverse.com/en/" className="text-gray-400 hover:text-green-400 mt-2 flex items-center gap-2"> 
+          <span>Managed & Designed By Aneeverse</span> 
+          <Image src="/logo/aneeverse-logo.png" alt='Aneeverse logo' width={20} height={20} />
+        </Link>
       </div>
     </footer>
   );

@@ -1,5 +1,4 @@
-"use client"
-// components/EnquiryForm.js
+"use client";
 import { useState } from 'react';
 
 export default function ProjectEnquireForm() {
@@ -8,12 +7,12 @@ export default function ProjectEnquireForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert('Enquiry Submitted!');
-    // You can add logic to handle form submission here (e.g., send data to backend)
+    // Add logic to handle form submission here (e.g., send data to backend)
   };
 
   return (
-    <section className="py-8 bg-white rounded-lg m-4">
-      <h2 className="text-2xl font-bold mb-4">Enquire About This Property</h2>
+    <section className="py-8 px-12 bg-white rounded-lg m-4 shadow-lg">
+      <h2 className="text-3xl font-bold text-green-600 mb-6 text-center">Enquire About This Property</h2>
       <form className="space-y-4" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name" className="block text-lg font-semibold">Name</label>
@@ -22,7 +21,7 @@ export default function ProjectEnquireForm() {
             id="name"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full p-2 border border-gray-300 rounded-lg"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
             required
           />
         </div>
@@ -33,7 +32,7 @@ export default function ProjectEnquireForm() {
             id="email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full p-2 border border-gray-300 rounded-lg"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
             required
           />
         </div>
@@ -43,12 +42,12 @@ export default function ProjectEnquireForm() {
             id="message"
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            className="w-full p-2 border border-gray-300 rounded-lg"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
             rows="4"
             required
           />
         </div>
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-all">
+        <button type="submit" className="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition-all duration-200">
           Submit Enquiry
         </button>
       </form>

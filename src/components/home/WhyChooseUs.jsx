@@ -1,26 +1,35 @@
 // components/WhyChooseUs.js
-import { FaCheckCircle } from 'react-icons/fa';
+import { FaCheckCircle } from "react-icons/fa";
 
 const reasons = [
   "Trusted by 500+ Clients",
   "Prime Locations Available",
-  "Transparent Deals",
-  "Legal Assistance"
+  "Transparent and Fair Deals",
+  "Expert Legal Assistance",
+  "Government-Approved Projects",
+  "Exclusive Access to New Listings",
+  "Personalized Customer Support",
+  "Sustainable and Eco-Friendly Approach"
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-16 bg-white rounded-lg m-4">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8">Why Choose Us</h2>
-        <ul className="space-y-4">
+    <section className="py-20 px-12 bg-gradient-to-br from-green-100 via-green-50 to-white rounded-xl shadow-xl m-6">
+      <div className="container mx-auto">
+        <h2 className="text-center text-4xl font-extrabold text-green-800 tracking-wide mb-12">
+          Why Choose Us
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {reasons.map((reason, index) => (
-            <li key={index} className="flex justify-center items-center space-x-2 p-2 bg-gray-50 rounded-full shadow-sm">
-              <FaCheckCircle className="text-green-500" />
-              <span className="text-lg">{reason}</span>
-            </li>
+            <div
+              key={index}
+              className="flex items-center p-6 bg-white border-2 border-green-300 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <FaCheckCircle className="text-green-600 text-2xl mr-4" />
+              <span className="text-lg font-medium text-gray-700">{reason}</span>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
