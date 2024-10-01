@@ -32,7 +32,7 @@ export default function Hero() {
           <Link href={"/projects"} className="bg-[#8fae15] text-white text-md sm:text-lg px-6 py-3 rounded-full hover:bg-[#657b0e] transition-all">
             Explore More
           </Link>
-          <Link href={"/contact"} className="bg-blue-600 text-white text-md sm:text-lg px-6 py-3 rounded-full hover:bg-blue-700 transition-all">
+          <Link href={"/contact"} className="bg-white border border-[#657b0e] text-[#657b0e] text-md sm:text-lg px-6 py-3 rounded-full hover:text-white hover:bg-[#657b0e] transition-all">
             Contact Us
           </Link>
         </motion.div>

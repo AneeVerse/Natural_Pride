@@ -22,8 +22,8 @@ export default function Header() {
     <header className="bg-white shadow border rounded-lg m-3 sm:m-4">
       <div className="container mx-auto flex justify-between items-center h-[90px] px-6">
         <Link href="/" className="text-2xl font-bold text-[#8fae15] flex items-center gap-2">
-          <img src="/logo/logo.jpg" alt='logo' className='w-16 h-16 self-center' />
-          <span>{"Natural Pride".toUpperCase()}</span>
+          <img src="/logo/logo.jpg" alt='logo' className='w-16 h-16 -mb-2 self-center' />
+          <span>{"Nature Pride".toUpperCase()}</span>
         </Link>
 
         {/* Hamburger Icon */}

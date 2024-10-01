@@ -10,8 +10,13 @@ export default function Footer() {
         
         {/* Company Info */}
         <div>
-          <h3 className="text-2xl font-bold mb-4 text-green-500">Nature Pride</h3>
-          <p className="text-sm">
+        <div className='flex gap-3 items-center mb-4 justify-center sm:justify-start'>
+          <img src='/logo/logo.jpg' alt='nature pride logo' className='w-[46px] h-[46px] rounded-full'/>
+
+          <h3 className="text-3xl font-bold text-[#8fae15]">Nature Pride</h3>
+          
+        </div>
+        <p className="text-sm">
             We are dedicated to offering the best real estate services with a focus on customer satisfaction. Explore our listings to find your dream property today.
           </p>
         </div>
@@ -75,7 +80,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-8 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center pt-4 text-sm text-center">
-        <p>© 2024 Nature Pride Realty. All Rights Reserved.</p>
+        <p>© 2024 Nature Pride Reality. All Rights Reserved.</p>
         <Link href="https://aneeverse.com/en/" className="text-gray-400 hover:text-green-400 mt-2 flex items-center gap-2"> 
           <span>Managed & Designed By Aneeverse</span> 
           <Image src="/logo/aneeverse-logo.png" alt='Aneeverse logo' width={20} height={20} />

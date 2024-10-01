@@ -1,6 +1,7 @@
 "use client";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -119,21 +120,21 @@ export default function Contact() {
                     <FaMapMarkerAlt className="text-3xl" />
                     <div>
                       <p className="text-lg font-semibold">Address</p>
-                      <p>123 Real Estate Avenue, City, Country</p>
+                      <p>501, 5th Floor, G-Square Business Park, Opp.Sanpada Railway Station, Sanpada (W), Navi Mumbai-400705.</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
                     <FaPhoneAlt className="text-3xl" />
                     <div>
                       <p className="text-lg font-semibold">Phone</p>
-                      <p>+123 456 7890</p>
+                      <p>+91 8013337222 / +91 9324289393 </p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
                     <FaEnvelope className="text-3xl" />
                     <div>
                       <p className="text-lg font-semibold">Email</p>
-                      <p>info@realestate.com</p>
+                      <Link href={"mailto:pridefuture555@gmail.com"}>pridefuture555@gmail.com</Link>
                     </div>
                   </div>
                 </div>
