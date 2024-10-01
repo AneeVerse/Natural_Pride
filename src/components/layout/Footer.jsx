@@ -10,7 +10,7 @@ export default function Footer() {
         
         {/* Company Info */}
         <div>
-          <h3 className="text-2xl font-bold mb-4 text-green-500">Nature Pride Realty</h3>
+          <h3 className="text-2xl font-bold mb-4 text-green-500">Nature Pride</h3>
           <p className="text-sm">
             We are dedicated to offering the best real estate services with a focus on customer satisfaction. Explore our listings to find your dream property today.
           </p>
