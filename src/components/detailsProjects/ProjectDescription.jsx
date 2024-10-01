@@ -11,7 +11,7 @@ export default function ProjectDescription() {
         </p>
         <p className="text-gray-700 mt-4 leading-relaxed">
           The area is known for its peaceful environment and excellent connectivity to major roads
-          and highways, making it convenient for commuters. Whether you're looking to settle down or
+          and highways, making it convenient for commuters. Whether you&apos;re looking to settle down or
           invest in real estate, this property offers a great value.
         </p>
       </section>

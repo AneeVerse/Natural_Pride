@@ -18,7 +18,7 @@ const testimonials = [
           <div className="space-y-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-white shadow-md p-6 rounded-lg">
-                <p className="text-lg italic mb-2">"{testimonial.review}"</p>
+                <p className="text-lg italic mb-2">&quot;{testimonial.review}&quot;</p>
                 <h3 className="text-xl font-bold">{testimonial.name}</h3>
               </div>
             ))}

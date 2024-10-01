@@ -73,19 +73,19 @@ export default function About() {
             {/* Testimonial 1 */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
               <FaQuoteLeft className="text-blue-500 text-3xl mb-4" />
-              <p className="text-gray-700 text-lg">"I had a wonderful experience working with this company. They found me the perfect home in a prime location and made the entire process seamless!"</p>
+              <p className="text-gray-700 text-lg">&quot;I had a wonderful experience working with this company. They found me the perfect home in a prime location and made the entire process seamless!&quot;</p>
               <p className="mt-4 font-bold">- Sarah Williams</p>
             </div>
             {/* Testimonial 2 */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
               <FaQuoteLeft className="text-blue-500 text-3xl mb-4" />
-              <p className="text-gray-700 text-lg">"Their professionalism and dedication were evident throughout the entire process. I highly recommend them for any property needs!"</p>
+              <p className="text-gray-700 text-lg">&quot;Their professionalism and dedication were evident throughout the entire process. I highly recommend them for any property needs!&quot;</p>
               <p className="mt-4 font-bold">- Michael Brown</p>
             </div>
             {/* Testimonial 3 */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
               <FaQuoteLeft className="text-blue-500 text-3xl mb-4" />
-              <p className="text-gray-700 text-lg">"Great service! They understood my requirements and helped me invest in the best property. I'll definitely work with them again!"</p>
+              <p className="text-gray-700 text-lg">&quot;Great service! They understood my requirements and helped me invest in the best property. I&apos;ll definitely work with them again!&quot;</p>
               <p className="mt-4 font-bold">- Emily Davis</p>
             </div>
           </div>
