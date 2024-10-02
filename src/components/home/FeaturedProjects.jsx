@@ -1,6 +1,7 @@
 "use client";
 // components/FeaturedProjects.js
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const projects = [
   { id: 1, title: "Land Parcel 1", image: "/images/projects/project1.jpg" },
@@ -41,9 +42,9 @@ export default function FeaturedProjects() {
                   Explore premium land located in prime areas with excellent
                   growth potential.
                 </p>
-                <button className="px-6 py-2 bg-green-600 text-white font-medium rounded-lg shadow-md hover:bg-green-700 transition-all duration-200">
+                <Link href={"/projects/f"} className="px-6 py-2 bg-green-600 text-white font-medium rounded-lg shadow-md hover:bg-green-700 transition-all duration-200">
                   View More
-                </button>
+                </Link>
               </div>
 
               {/* Decorative corner element */}

@@ -19,7 +19,7 @@ const InquiryFormPopup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 5000); // Show popup after 5 seconds
+    }, 3000); // Show popup after 5 seconds
 
     return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);

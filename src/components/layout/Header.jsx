@@ -34,7 +34,7 @@ export default function Header() {
         {/* Navigation Links for Desktop */}
         <nav className="hidden md:flex gap-8">
           {navLinks.map(link => (
-            <Link key={link.label} href={link.href} className="flex items-center text-gray-700 hover:text-[#8fae15] transition-colors duration-300">
+            <Link key={link.label} href={link.href} className="flex items-center text-[#798d2b] hover:text-[#535f21] transition-colors duration-300">
               {link.icon} {link.label}
             </Link>
           ))}

@@ -143,19 +143,20 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* Google Map Integration */}
-        <section className="bg-white rounded-lg shadow-md p-4 sm:p-8 mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-[#657b0e]">Our Location</h2>
-          <div className="w-full h-72 rounded-lg overflow-hidden">
-            <iframe
-              className="w-full h-full"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509012!2d144.9556518154738!3d-37.8172099797515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f03127a073b1!2sVictoria%20Harbour%2C%20Docklands%20VIC%203008%2C%20Australia!5e0!3m2!1sen!2sin!4v1629147092479!5m2!1sen!2sin"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </section>
+      {/* Google Map Integration */}
+<section className="bg-white rounded-lg shadow-md p-4 sm:p-8 mb-12">
+  <h2 className="text-3xl font-bold mb-6 text-[#657b0e]">Our Location</h2>
+  <div className="w-full h-72 rounded-lg overflow-hidden">
+    <iframe 
+      className="w-full h-full" // Ensure iframe takes full width and height
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7050.316126490431!2d73.00786799115802!3d19.067992019852674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c145af38a625%3A0x303fd73974a38c1c!2sG-Square%20Business%20Park!5e0!3m2!1sen!2sin!4v1727850538457!5m2!1sen!2sin"
+      allowFullScreen // Use camelCase for allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade" // Use camelCase for referrerPolicy
+    ></iframe>
+  </div>
+</section>
+
 
         {/* Social Media Links */}
         <section className="bg-[#8fae15] rounded-lg shadow-md p-8 mb-12">
