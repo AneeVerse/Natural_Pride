@@ -54,9 +54,6 @@ export default function Contact() {
             {/* Form Section */}
             <div className="flex-1 bg-white rounded-lg shadow-lg px-3 py-8 sm:px-8 mb-6 md:mb-0">
               <h2 className="text-3xl font-bold mb-6 text-[#657b0e]">Get in Touch</h2>
-              {/* Display messages here */}
-              {successMsg && <div className="mb-4 text-green-600">{successMsg}</div>}
-              {errorMsg && <div className="mb-4 text-red-600">{errorMsg}</div>}
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-lg font-semibold">Name</label>
@@ -102,6 +99,10 @@ export default function Contact() {
                     required
                   />
                 </div>
+                
+              {/* Display messages here */}
+              {successMsg && <div className="mb-4 text-green-600">{successMsg}</div>}
+              {errorMsg && <div className="mb-4 text-red-600">{errorMsg}</div>}
                 <button
                   type="submit"
                   className="bg-[#8fae15] w-full text-white px-6 py-3 rounded-lg hover:bg-[#657b0e] transition-all flex items-center justify-center"
