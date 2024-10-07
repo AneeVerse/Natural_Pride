@@ -13,6 +13,7 @@ import { motion } from 'framer-motion';
 
 export default function ProjectGallery({images}) {
     const [currentImage, setCurrentImage] = useState(images[0]);
+ 
 
     return (
         <section className="bg-gray-50 rounded-lg m-3 sm:m-4 p-3 sm:p-6 shadow-lg">
@@ -28,7 +29,7 @@ export default function ProjectGallery({images}) {
                 
                 style={{ scrollbarWidth: 'none', 'msOverflowStyle': 'none' }} // Firefox and Internet Explorer
                 >
-                    {images.map((image, index) => (
+                    {images && images.map((image, index) => (
                         <motion.img
                             key={index}
                             src={image}

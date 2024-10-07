@@ -28,7 +28,7 @@ const InquiryFormPopup = () => {
     <>
       {isOpen && (
         <div className="fixed inset-0 bg-gray-700 bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white relative rounded-lg shadow-lg p-8 w-11/12 md:w-1/3">
+          <div className="bg-white relative rounded-lg shadow-lg p-8  w-11/12 md:w-3/5 lg:w-1/3">
             <h2 className="text-2xl font-bold mb-6 text-[#657b0e]">Inquiry Form</h2>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
