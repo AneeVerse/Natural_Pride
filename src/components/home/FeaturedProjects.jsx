@@ -7,12 +7,12 @@ import projects from "@/data/projects";
 
 export default function FeaturedProjects() {
   return (
-    <section className="py-6 sm:py-12 px-4 sm:px-12 bg-gradient-to-tr from-white to-green-50 rounded-xl shadow-xl m-3 sm:m-6">
+    <section className="py-6 sm:py-12 px-2 sm:px-12 bg-gradient-to-tr from-white to-green-50 rounded-xl shadow-xl m-3 sm:m-6">
       <div className="container mx-auto">
         <h2 className="text-center text-3xl sm:text-5xl font-extrabold text-green-800 tracking-wide mb-16">
           Discover Our Featured Projects
         </h2>
-        <div className="flex justify-center gap-10">
+        <div className="flex flex-wrap justify-center gap-10">
           {projects.map((project) => (
             <motion.div
               key={project.id}
@@ -30,7 +30,7 @@ export default function FeaturedProjects() {
               </div>
 
               {/* Project Info */}
-              <div className="p-6 relative z-10">
+              <div className="px-3 py-6 sm:p-6 relative z-10">
                 <h3 className="text-2xl font-semibold text-[green-800] mb-3">
                   {project.title}
                 </h3>

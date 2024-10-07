@@ -27,7 +27,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="mt-8 flex gap-4"
+          className="mt-8 flex flex-col sm:flex-row text-center gap-4"
         >
           <Link href={"/projects"} className="bg-[#8fae15] text-white text-md sm:text-lg px-6 py-3 rounded-full hover:bg-[#657b0e] transition-all">
             Explore More
