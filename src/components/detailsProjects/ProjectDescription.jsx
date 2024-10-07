@@ -1,8 +1,19 @@
-export default function ProjectDescription() {
+import Image from "next/image";
+
+export default function ProjectDescription({ projectDesImage }) {
   return (
     <section className="py-8 px-4 sm:px-12 bg-white rounded-lg m-3 sm:m-4 shadow-lg">
-      <h2 className="text-3xl font-bold text-green-600 mb-6 text-center">Project Description</h2>
-      <p className="text-gray-700 leading-relaxed mb-4">
+      <h2 className="text-3xl font-bold text-green-600 mb-6 text-center">
+        Project Description
+      </h2>
+      <div className={"flex flex-col gap-16"}>
+        {projectDesImage &&
+          projectDesImage.map((val, ind) => {
+            return <Image key={ind} src={val} alt={`img ${ind}`}
+            width={733} height={544} layout="responsive" />;
+          })}
+      </div>
+      {/* <p className="text-gray-700 leading-relaxed mb-4">
         This land/property is located in the prime area of City A, offering an ideal opportunity
         for residential development. Surrounded by lush greenery, the property is perfect for
         building your dream home or for investment purposes. It is close to essential amenities,
@@ -21,7 +32,7 @@ export default function ProjectDescription() {
           <li>Excellent connectivity to major roads</li>
           <li>Ideal for residential or investment purposes</li>
         </ul>
-      </div>
+      </div> */}
     </section>
   );
 }

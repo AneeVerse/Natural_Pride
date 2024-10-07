@@ -2,16 +2,16 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const images = [
-    '/images/home/banner.jpg',
-    '/images/projects/project1.jpg',
-    '/images/projects/project3.jpg',
-    '/images/projects/project4.jpg',
-    '/images/projects/project2.jpg',  // Added another image for variety
-    '/images/home/banner.jpg',  // Added another image for variety
-];
+// const images = [
+//     '/images/home/banner.jpg',
+//     '/images/projects/project1.jpg',
+//     '/images/projects/project3.jpg',
+//     '/images/projects/project4.jpg',
+//     '/images/projects/project2.jpg',  // Added another image for variety
+//     '/images/home/banner.jpg',  // Added another image for variety
+// ];
 
-export default function ProjectGallery() {
+export default function ProjectGallery({images}) {
     const [currentImage, setCurrentImage] = useState(images[0]);
 
     return (

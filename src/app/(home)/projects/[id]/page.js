@@ -1,3 +1,4 @@
+"use client"
 import InquiryFormPopup from '@/components/detailsProjects/InquiryFormPopup ';
 import ProjectDescription from '@/components/detailsProjects/ProjectDescription';
 import ProjectEnquireForm from '@/components/detailsProjects/ProjectEnquireForm';
@@ -5,20 +6,19 @@ import ProjectGallery from '@/components/detailsProjects/ProjectGallery';
 import ProjectHeader from '@/components/detailsProjects/ProjectHeader'
 import ProjectKeyFeatures from '@/components/detailsProjects/ProjectKeyFeatures';
 import ProjectPriceArea from '@/components/detailsProjects/ProjectPriceArea';
-import React from 'react'
+import projects from '@/data/projects';
 
-const page = () => {
-    const project = {
-        name: 'Prime Residential Land in City A',
-        location: 'City A, Region X',
-      };
+const page = ({params}) => {
+  const {id} = params;
+      const project = projects.find((val) => val.id === id);
+
   return (
     <div>
-         <ProjectHeader name={project.name} location={project.location} />
-         <ProjectGallery/>
-         <ProjectDescription/>
-         <ProjectKeyFeatures/>
-         <ProjectPriceArea/>
+         <ProjectHeader name={project.title}/>
+         <ProjectGallery images={project.images}/>
+         <ProjectDescription projectDesImage={project.projectDesImage}/>
+         <ProjectKeyFeatures features={project.keyfeatures}/>
+         <ProjectPriceArea price={project.price} area={project.area}/>
          <ProjectEnquireForm/>
          <InquiryFormPopup/>
     </div>

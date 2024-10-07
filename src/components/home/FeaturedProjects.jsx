@@ -2,12 +2,8 @@
 // components/FeaturedProjects.js
 import { motion } from "framer-motion";
 import Link from "next/link";
+import projects from "@/data/projects";
 
-const projects = [
-  { id: 1, title: "Land Parcel 1", image: "/images/projects/project1.jpg" },
-  { id: 2, title: "Land Parcel 2", image: "/images/projects/project2.jpg" },
-  { id: 3, title: "Land Parcel 3", image: "/images/projects/project3.jpg" },
-];
 
 export default function FeaturedProjects() {
   return (
@@ -16,11 +12,11 @@ export default function FeaturedProjects() {
         <h2 className="text-center text-3xl sm:text-5xl font-extrabold text-green-800 tracking-wide mb-16">
           Discover Our Featured Projects
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="flex justify-center gap-10">
           {projects.map((project) => (
             <motion.div
               key={project.id}
-              className="relative bg-white border-2 border-green-200 rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:scale-105"
+              className="relative bg-white max-w-[500px] border-2 border-green-200 rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:scale-105"
               whileHover={{ scale: 1.07 }}
             >
               {/* Image with subtle overlay effect */}
@@ -39,10 +35,12 @@ export default function FeaturedProjects() {
                   {project.title}
                 </h3>
                 <p className="text-sm text-gray-600 mb-4">
-                  Explore premium land located in prime areas with excellent
-                  growth potential.
+                  {project.des}
                 </p>
-                <Link href={"/projects/f"} className="px-6 py-2 bg-green-600 text-white font-medium rounded-lg shadow-md hover:bg-green-700 transition-all duration-200">
+                <Link
+                  href={`/projects/${project.id}`}
+                  className="px-6 py-2 bg-green-600 text-white font-medium rounded-lg shadow-md hover:bg-green-700 transition-all duration-200"
+                >
                   View More
                 </Link>
               </div>

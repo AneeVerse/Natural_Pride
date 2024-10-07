@@ -1,19 +1,8 @@
 import { FaCheckCircle } from 'react-icons/fa';
 
-const features = [
-  "Close to Highway",
-  "Water Supply Available",
-  "Government Approved",
-  "Peaceful Surroundings",
-  "Proximity to Schools and Hospitals",
-  "Well-Planned Layout",  // Added more features
-  "24/7 Security Services",
-  "Excellent Investment Potential"
-];
-
-export default function ProjectKeyFeatures() {
+export default function ProjectKeyFeatures({features}) {
   return (
-    <section className="py-6 sm:py-12 px-4 sm:px-12 bg-gradient-to-br from-green-100 via-green-50 to-white rounded-xl shadow-xl m-3 sm:m-6">
+    <section className="py-6 sm:py-12 px-4 sm:px-12 bg-gradient-to-br from-green-100 via-green-50 to-white rounded-xl shadow-md m-3 sm:m-6">
       <div className="container mx-auto">
         <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-green-800 tracking-wide mb-12">
         Key Features

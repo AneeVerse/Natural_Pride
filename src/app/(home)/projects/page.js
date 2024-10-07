@@ -11,7 +11,7 @@ const page = () => {
   
     return (
       <div className="bg-gray-50 min-h-screen">
-        <ProjectCategories />
+        {/* <ProjectCategories /> */}
         <ProjectListings />
         {/* <Pagination currentPage={currentPage} totalPages={totalPages} /> */}
       </div>
