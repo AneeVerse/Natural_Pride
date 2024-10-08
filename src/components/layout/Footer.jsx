@@ -80,8 +80,8 @@ export default function Footer() {
       </div>
 
       <div className="mt-8 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center pt-4 text-sm text-center">
-        <p>© 2024 Nature Pride Reality. All Rights Reserved.</p>
-        <Link href="https://aneeverse.com/en/" className="text-gray-400 hover:text-green-400 mt-2 flex items-center gap-2"> 
+        <p>© 2024 Nature Pride Reality Pvt. Ltd. All Rights Reserved.</p>
+        <Link target="_blank" href="https://aneeverse.com/en/" className="text-gray-400 hover:text-green-400 mt-2 flex items-center gap-2"> 
           <span>Managed & Designed By Aneeverse</span> 
           <Image src="/logo/aneeverse-logo.png" alt='Aneeverse logo' width={20} height={20} />
         </Link>

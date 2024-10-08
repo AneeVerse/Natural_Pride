@@ -5,7 +5,7 @@
       des: "3.5 + ACRES OF LAND 20000 SQ. FT. & MORE FARMHOUSE PLOTS PRIME LOCATION KASHID BEACH 10+ NEAR BY ATTRACTION.",
       image: "/images/projects/ali1.JPG",
       price: "350000",
-      area: "4343 sq. yards",
+      area: "1089 sq. feet",
       projectDesImage:[
         "/images/projects/pg3.png",
         "/images/projects/pg4.png",
@@ -16,6 +16,7 @@
         "/images/projects/ali3.JPG",
         "/images/projects/ali4.JPG",
         "/images/projects/ali5.JPG",
+        "/images/projects/alibag-m-earth.jpg",
         "/images/projects/earth-alibag1.png",
         "/images/projects/earth-alibag2.png",
         "/images/projects/earth-alibag3.png",
@@ -36,7 +37,7 @@
       des: "WE AT NATURE REALITY INDIA PVT. LTD. OFFER you A VARIETY OF OPEN LAND PARCELS IN RAPIDLY DEVELOPING MAHA MUMBAI AREAS AROUND URAN PANVEL & NAVI MUMBAI",
       image: "/images/projects/img3.png",
       price: "350000",
-      area: "4343 sq. yards",    
+      area: "1089 sq. feet",    
       projectDesImage:[
         "/images/projects/pg1.png",
         "/images/projects/pg2.png",

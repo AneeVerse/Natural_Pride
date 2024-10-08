@@ -8,9 +8,9 @@ export default function ProjectListings() {
         <section className="py-6 sm:py-12 px-2 sm:px-12 m-2  sm:m-4 ">
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold mb-8 text-center text-[#166534]">Available Projects</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="flex flex-wrap gap-5 justify-center sm:gap-8">
                     {projects.map((project) => (
-                        <div key={project.id} className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:scale-105">
+                        <div key={project.id} className="bg-white w-[450px] rounded-lg shadow-lg overflow-hidden transition-transform flex flex-col justify-between duration-300 hover:shadow-xl hover:scale-105">
                             <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
                             <div className="px-3 py-6 sm:p-6">
                                 <h3 className="text-xl font-bold mb-2 text-gray-900">{project.title}</h3>

@@ -61,10 +61,10 @@ export default function About() {
         {/* Happy Client Section */}
         <section className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-3xl font-bold mb-4 text-gray-800">Happy Clients</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             {clientImages.map((image, index) => (
               <div key={index} className="bg-gray-100 rounded-lg shadow-lg p-4">
-                <img src={image} alt={`Client ${index + 1}`} className="w-full h-40 sm:h-56 object-cover rounded-lg" />
+                <img src={image} alt={`Client ${index + 1}`} className="w-[260px] h-40 sm:h-56 object-cover rounded-lg" />
               </div>
             ))}
           </div>
