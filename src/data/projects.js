@@ -3,17 +3,24 @@
       id: "alibaug-revdanda",
       title: "Alibaug Revdanda Kashid Coastal Highway",
       des: "3.5 + ACRES OF LAND 20000 SQ. FT. & MORE FARMHOUSE PLOTS PRIME LOCATION KASHID BEACH 10+ NEAR BY ATTRACTION.",
-      image: "/images/projects/img2.png",
-      price: "23599",
+      image: "/images/projects/ali1.JPG",
+      price: "350000",
       area: "4343 sq. yards",
       projectDesImage:[
         "/images/projects/pg3.png",
         "/images/projects/pg4.png",
       ],
       images:[
-        "/images/projects/img2.png",
-        "/images/projects/img2.png",
-        "/images/projects/img2.png"
+        "/images/projects/ali1.JPG",
+        "/images/projects/ali2.JPG",
+        "/images/projects/ali3.JPG",
+        "/images/projects/ali4.JPG",
+        "/images/projects/ali5.JPG",
+        "/images/projects/earth-alibag1.png",
+        "/images/projects/earth-alibag2.png",
+        "/images/projects/earth-alibag3.png",
+        "/images/projects/earth-alibag4.png",
+        "/images/projects/earth-alibag5.png",
       ],
       keyfeatures: [
         "Free Site Visit",
@@ -28,7 +35,7 @@
       title: "MUMBAI AREAS AROUND URAN PANVEL & NAVI MUMBAI",
       des: "WE AT NATURE REALITY INDIA PVT. LTD. OFFER you A VARIETY OF OPEN LAND PARCELS IN RAPIDLY DEVELOPING MAHA MUMBAI AREAS AROUND URAN PANVEL & NAVI MUMBAI",
       image: "/images/projects/img3.png",
-      price: "5999",
+      price: "350000",
       area: "4343 sq. yards",    
       projectDesImage:[
         "/images/projects/pg1.png",
@@ -36,8 +43,10 @@
       ],
       images:[
         "/images/projects/img3.png",
-        "/images/projects/img3.png",
-        "/images/projects/img3.png"
+        "/images/projects/ali2.JPG",
+        "/images/projects/ali3.JPG",
+        "/images/projects/ali4.JPG",
+        "/images/projects/ali5.JPG"
       ],
       keyfeatures: [
         "Free Site Visit",

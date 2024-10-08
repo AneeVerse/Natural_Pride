@@ -19,7 +19,7 @@ const page = ({params}) => {
          <ProjectDescription projectDesImage={project.projectDesImage}/>
          <ProjectKeyFeatures features={project.keyfeatures}/>
          <ProjectPriceArea price={project.price} area={project.area}/>
-         <ProjectEnquireForm/>
+         <ProjectEnquireForm image={project.image}/>
          <InquiryFormPopup/>
     </div>
   )

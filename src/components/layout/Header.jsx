@@ -23,16 +23,16 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center h-[90px] px-6">
         <Link href="/" className="text-2xl font-bold text-[#8fae15] flex items-center gap-2">
           <img src="/logo/logo.jpg" alt='logo' className='w-16 h-16 -mb-2 self-center' />
-          <span>{"Nature Pride".toUpperCase()}</span>
+          <span className={"hidden sm:inline-block"}>{"Nature Pride Reality Pvt. Ltd.".toUpperCase()}</span>
         </Link>
 
         {/* Hamburger Icon */}
-        <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
+        <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
           {isOpen ? <FaTimes className="text-3xl text-[#8fae15]" /> : <FaBars className="text-3xl text-[#8fae15]" />}
         </div>
 
         {/* Navigation Links for Desktop */}
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden lg:flex gap-8">
           {navLinks.map(link => (
             <Link key={link.label} href={link.href} className="flex items-center text-[#798d2b] hover:text-[#535f21] transition-colors duration-300">
               {link.icon} {link.label}

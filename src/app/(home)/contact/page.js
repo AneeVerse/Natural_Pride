@@ -106,6 +106,8 @@ export default function Contact() {
                 <button
                   type="submit"
                   className="bg-[#8fae15] w-full text-white px-6 py-3 rounded-lg hover:bg-[#657b0e] transition-all flex items-center justify-center"
+                  
+                disabled={loading}
                 >
                   {loading ? <span className="loader"></span> : 'Submit'}
                 </button>
