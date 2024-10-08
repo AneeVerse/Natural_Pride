@@ -63,7 +63,7 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
           <div className="flex justify-center md:justify-start space-x-6">
-            <Link href="#" className="text-white hover:text-blue-600 transition">
+            <Link target="_blank" href="https://www.facebook.com/profile.php?id=61566460405792" className="text-white hover:text-blue-600 transition">
               <FaFacebook size={24} />
             </Link>
             <Link href="#" className="text-white hover:text-blue-400 transition">
