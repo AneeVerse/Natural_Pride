@@ -28,7 +28,7 @@ const FloatingActionButton = () => {
               <FaWhatsapp size={24} />
             </a>
             <a
-              href="mailto:pridefuture555@gmail.com"
+              href="mailto:naturepride222@gmail.com"
               className="w-12 h-12 bg-white text-[#8ac240] rounded-full flex items-center justify-center shadow-lg border border-[#8ac240]"
             >
               <FaEnvelope size={24} />
@@ -70,14 +70,14 @@ const FloatingActionButton = () => {
                 </div>
                 <div className="flex items-center justify-between p-3 border border-[#8ac240] rounded-full">
                   <a
-                    href="mailto:pridefuture555@gmail.com"
+                    href="mailto:naturepride222@gmail.com"
                     className="flex items-center text-[#8ac240] cursor-pointer"
                   >
                     <FaEnvelope size={24} />
-                    <span className="ml-2">Email: pridefuture555@gmail.com</span>
+                    <span className="ml-2">Email: naturepride222@gmail.com</span>
                   </a>
                   <button
-                    onClick={() => handleCopy('pridefuture555@gmail.com')}
+                    onClick={() => handleCopy('naturepride222@gmail.com')}
                     className="text-gray-500 hover:text-[#8ac240] focus:outline-none"
                   >
                     <MdContentCopy size={20} />
