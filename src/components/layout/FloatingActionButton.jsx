@@ -15,7 +15,7 @@ const FloatingActionButton = () => {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 space-y-2 z-40">
+    <div className="fixed bottom-5 right-6 space-y-2 z-40">
       {open && (
         <>
           <div className="flex md:hidden flex-col items-center gap-2">
