@@ -137,7 +137,7 @@ export default function Contact() {
                     <FaEnvelope className="text-3xl" />
                     <div>
                       <p className="text-lg font-semibold">Email</p>
-                      <Link href={"mailto:naturepride222@gmail.com"}>naturepride222@gmail.com</Link>
+                      <Link href={"mailto:pridefuture555@gmaiI.com"}>pridefuture555@gmaiI.com</Link>
                     </div>
                   </div>
                 </div>
@@ -165,10 +165,10 @@ export default function Contact() {
         <section className="bg-[#8fae15] rounded-lg shadow-md p-8 mb-12">
           <h2 className="text-3xl font-bold mb-6 text-white">Follow Us</h2>
           <div className="flex space-x-6">
-            <a href="https://www.facebook.com" className="text-white text-3xl">
+            <Link target="_blank" href="https://www.facebook.com/profile.php?id=61566460405792" className="text-white text-3xl">
               <FaFacebook />
-            </a>
-            <a href="https://www.twitter.com" className="text-white text-3xl">
+            </Link>
+            {/* <a href="https://www.twitter.com" className="text-white text-3xl">
               <FaTwitter />
             </a>
             <a href="https://www.instagram.com" className="text-white text-3xl">
@@ -176,7 +176,7 @@ export default function Contact() {
             </a>
             <a href="https://www.linkedin.com" className="text-white text-3xl">
               <FaLinkedin />
-            </a>
+            </a> */}
           </div>
         </section>
       </div>

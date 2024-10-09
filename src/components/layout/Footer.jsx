@@ -66,7 +66,7 @@ export default function Footer() {
             <Link target="_blank" href="https://www.facebook.com/profile.php?id=61566460405792" className="text-white hover:text-blue-600 transition">
               <FaFacebook size={24} />
             </Link>
-            <Link href="#" className="text-white hover:text-blue-400 transition">
+            {/* <Link href="#" className="text-white hover:text-blue-400 transition">
               <FaTwitter size={24} />
             </Link>
             <Link href="#" className="text-white hover:text-pink-500 transition">
@@ -74,7 +74,7 @@ export default function Footer() {
             </Link>
             <Link href="#" className="text-white hover:text-blue-700 transition">
               <FaLinkedin size={24} />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

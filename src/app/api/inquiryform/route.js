@@ -15,7 +15,7 @@ export async function POST(request) {
   // Define the email options
   const mailOptions = {
     from: `"Nature Pride" <${data.email}>`, // Sender's email & name
-    to: 'abhi@aneeverse.com', // Receiver's email
+    to: 'naturepride222@gmail.com', // Receiver's email
     subject: 'New Contact Form Submission', // Email subject
     html: `
     <!DOCTYPE html>

@@ -3,7 +3,7 @@
       id: "alibaug-revdanda",
       title: "Alibaug Revdanda Kashid Coastal Highway",
       des: "3.5 + ACRES OF LAND 20000 SQ. FT. & MORE FARMHOUSE PLOTS PRIME LOCATION KASHID BEACH 10+ NEAR BY ATTRACTION.",
-      image: "/images/projects/ali1.JPG",
+      image: "/images/projects/ali2.JPG",
       price: "350000",
       area: "1089 sq. feet",
       projectDesImage:[
@@ -11,8 +11,8 @@
         "/images/projects/pg4.png",
       ],
       images:[
-        "/images/projects/ali1.JPG",
         "/images/projects/ali2.JPG",
+        "/images/projects/ali1.JPG",
         "/images/projects/ali3.JPG",
         "/images/projects/ali4.JPG",
         "/images/projects/ali5.JPG",
@@ -35,7 +35,7 @@
       id: "mumbai-areas",
       title: "MUMBAI AREAS AROUND URAN PANVEL & NAVI MUMBAI",
       des: "WE AT NATURE REALITY INDIA PVT. LTD. OFFER you A VARIETY OF OPEN LAND PARCELS IN RAPIDLY DEVELOPING MAHA MUMBAI AREAS AROUND URAN PANVEL & NAVI MUMBAI",
-      image: "/images/projects/img3.png",
+      image: "/images/projects/img3.jpg",
       price: "350000",
       area: "1089 sq. feet",    
       projectDesImage:[
@@ -43,8 +43,8 @@
         "/images/projects/pg2.png",
       ],
       images:[
-        "/images/projects/img3.png",
-        "/images/projects/ali2.JPG",
+        "/images/projects/img3.jpg",
+        // "/images/projects/ali2.JPG",
         "/images/projects/ali3.JPG",
         "/images/projects/ali4.JPG",
         "/images/projects/ali5.JPG"
