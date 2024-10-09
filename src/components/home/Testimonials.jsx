@@ -1,24 +1,24 @@
 // components/Testimonials.js
 const testimonials = [
   {
-    name: "John Doe",
-    review: "Amazing service! I found the perfect property thanks to this platform.",
-    location: "New York, USA",
+    name: "Pratik Yadav",
+    review: "Great company..great Customer service Genuine and honest staff. Every person who is looking to invest in land must visit this land venture company.",
+    location: "India",
   },
   {
-    name: "Jane Smith",
-    review: "Highly recommend for anyone looking for prime land! They made the whole process easy and smooth.",
-    location: "London, UK",
+    name: "Pushkar Dake",
+    review: "They have amazing land properties, and the team is highly professional. Highly recommended for anyone looking for great investment opportunities in land!",
+    location: "India",
   },
   {
-    name: "Arjun Patel",
+    name: "Govind sah",
     review: "A professional team that really understands the real estate market. I’m very happy with my purchase.",
     location: "Mumbai, India",
   },
   {
     name: "Maria Garcia",
     review: "Exceptional customer service and a great selection of properties. Highly satisfied!",
-    location: "Madrid, Spain",
+    location: "India",
   }
 ];
 
