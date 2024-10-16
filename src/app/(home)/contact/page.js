@@ -137,7 +137,7 @@ export default function Contact() {
                     <FaEnvelope className="text-3xl" />
                     <div>
                       <p className="text-lg font-semibold">Email</p>
-                      <Link href={"mailto:pridefuture555@gmaiI.com"}>pridefuture555@gmaiI.com</Link>
+                      <Link href={"mailto:pridefuture555@gmaiI.com"}>naturepride222@gmail.com</Link>
                     </div>
                   </div>
                 </div>
