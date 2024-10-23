@@ -22,7 +22,7 @@ export default function Header() {
     <header className="bg-white sm:border-b rounded-lg m-3 sm:m-4">
       <div className="container mx-auto flex justify-between items-center h-[90px] px-6">
         <Link href="/" className="text-2xl font-bold text-[#8fae15] flex items-center gap-2">
-          <img src="/logo/logo.jpg" alt='logo' className='w-16 h-16 -mb-2 self-center' />
+          <img src="/logo/logo.png" alt='logo' className='w-16 h-16 -mb-2 self-center' />
           <span className={"hidden sm:inline-block"}>{"Nature Pride Reality Pvt. Ltd.".toUpperCase()}</span>
         </Link>
 
@@ -52,10 +52,10 @@ export default function Header() {
         >
           <div className="flex justify-between items-center mb-4">
             <Link href="/" className="text-2xl font-bold text-[#8fae15] flex items-center gap-2">
-              <img src="/logo/logo.jpg" alt='logo' className='w-10 h-10' />
-              <span>{"Natural Pride".toUpperCase()}</span>
+              <img src="/logo/logo.png" alt='logo' className='w-10 h-10' />
+              <span className='text-sm' >{"Nature Pride Reality Pvt. Ltd.".toUpperCase()}</span>
             </Link>
-            <button onClick={toggleMenu} className="text-[#8fae15] text-3xl">
+            <button onClick={toggleMenu} className="text-[#8fae15] text-xl">
               <FaTimes />
             </button>
           </div>

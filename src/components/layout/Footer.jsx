@@ -11,7 +11,7 @@ export default function Footer() {
         {/* Company Info */}
         <div>
         <div className='flex flex-col lg:flex-row gap-3 items-center mb-4 justify-center sm:justify-start'>
-          <img src='/logo/logo.jpg' alt='nature pride logo' className='w-[46px] h-[46px] rounded-full'/>
+          <img src='/logo/logo.png' alt='nature pride logo' className='w-[46px] h-[46px] rounded-full'/>
 
           <h3 className="text-3xl font-bold text-[#8fae15]">Nature Pride Reality Pvt. Ltd.</h3>
           
