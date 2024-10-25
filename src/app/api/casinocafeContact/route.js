@@ -16,7 +16,7 @@ export async function POST(request) {
   // Define the email options
   const mailOptions = {
     from: `"CasinoCafe" <${data.email}>`, // Sender's email & name
-    to: 'worldm957@gmail.com', // Receiver's email
+    to: 'tokyofoods2021@gmail.com', // Receiver's email
     subject: 'New Contact Form Submission', // Email subject
     html: `
     <!DOCTYPE html>
